@@ -143,7 +143,11 @@ nav{
 
 /*##############header################*/
 header{
-
+position: relative;
+    top: 5rem;
+    overflow: hidden;
+    height: 70vh;
+    margin-bottom: 100%;
 }
 .header__container{
     display: grid;
