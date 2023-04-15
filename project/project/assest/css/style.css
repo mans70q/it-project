@@ -425,12 +425,94 @@ footer ul li a:hover{
 .footer__copyright{
     text-align: center;
     margin-top: 4rem;
-    padding: 1.2rem 0;
+    padding: 1.2rem 2;
     border-top: 1px solid var(--color-bg2);
 }
 
 
+/*=========achievements==============*/
+.about__achievements{
+    margin-top: 5rem;
+}
+.about__achievement-container{
+    display:grid;
+    grid-template-columns: 40% 60%;
+    gap : 5rem
+}
+
+.about__achievements-right>p {
+    margin: 4rem 10rem  4rem;
+
+}
+
+.achievement__cards{
+    display:grid;
+    grid-template-columns: repeat(3fr,1fr);
+    gap:5rem;
+}
+.achievement__card{
+    background: var(--color-bg1);
+    padding: 1rem;
+    border-radius: 40rem;
+    text-align: center;
+    transition: var(--transition );
+
+}
+.achievement__card:hover{
+    background: var(--color-bg2);
+    box-shadow: 0 3rem 3rem rgba(0,0, 0, 0.3) ;
+}
+
+.about__achievement__icon{
+    background: var(--color-danger);
+    padding: 0.6rem;
+    border-radius:1rem ;
+    display: inline-block;
+    margin-bottom: 3rem;
+}
+
+.achievement__card:nth-child(2) 
+.achievement__icon{
+    background: var(--color-success);
+
+}
+
+.achievement__card:nth-child(3) 
+.achievement__icon{
+    background: var(--color-primary);
+
+}
+
+.achievement__card p{
+    margin-top: 1rem;
+
+}
+/*========================team===========================*/
+
+.team{
+  margin-top: auto;
+    background: var(--color-bg1);
+    box-shadow: inset 0 0 3rem rgba(0,0, 0, 0.5);
 
 
+}
+
+.team__container{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 2rem;
+}
+.team__member{
+    background: var(--color-bg1);
+    padding: 6rem;
+    border: 2px solid transparent;
+    transition: var(--transition);
+
+}
+.team__member:hover{
+    background: transparent;
+    border-color: var(--color-primary);
+
+}
 
 
