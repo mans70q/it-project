@@ -212,7 +212,20 @@ position: relative;
     z-index: 1;
 }
 
-.category:nth-child(2)  .category__icon{
+.category__icon{
+    background: var(--color-primary);
+    padding: 0.7rem;
+    border-radius: 0.9rem;
+
+}
+
+.category__icon1{
+    background: var(--color-primary);
+    padding: 0.7rem;
+    border-radius: 0.9rem;
+}
+
+.category:nth-child(2).category__icon1{
     background: var(--color-danger);
 }
 
@@ -228,12 +241,7 @@ position: relative;
     background: var(--color-danger);
 }
 
-.category__icon{
-    background: var(--color-primary);
-    padding: 0.7rem;
-    border-radius: 0.9rem;
 
-}
 
 .category h5{
     margin: 2rem 0 1rem;
@@ -241,6 +249,11 @@ position: relative;
 
 .category p{
     font-size: 0.85rem;
+}
+
+.btn{
+    color: var(--color-white);
+    background: var(--color-danger-);
 }
 
 /*  popular courses  */ 
@@ -380,7 +393,7 @@ footer{
 
 .footer__container{
     display: grid;
-    grid-template-columns: repeat(4,1f);
+    grid-template-columns: repeat(4,1fr);
     gap: 5rem;
 
 }
@@ -401,6 +414,22 @@ footer ul li{
 footer ul li a:hover{
     text-decoration: underline;
 }
+
+.footer__socials{
+    display: flex;
+    gap: 1rem;
+    font-size: 1.2rem;
+    margin-top: 2rem;
+}
+
+.footer__copyright{
+    text-align: center;
+    margin-top: 4rem;
+    padding: 1.2rem 0;
+    border-top: 1px solid var(--color-bg2);
+}
+
+
 
 
 
